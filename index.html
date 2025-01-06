@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template1</title>
+    <link rel="stylesheet" href="CSS/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    </style>
+</head>
+
+<body class="w-full h-full font-QuickSand">
+    <!-- Header -->
+    <header class="w-full" id="home">
+        <!-- navbar -->
+        <nav
+            class="w-full h-24 bg-white text-[#715C54] flex justify-between items-center px-10 shadow-custom-inner fixed top-0 z-50">
+            <h1 class="text-[#000] text-[2.5rem] font-bold ">Revel<span class="text-[#FF9900]">ation.</span></h1>
+            <ul class="justify-between items-center space-x-10 text-[1.3rem] hidden md:flex">
+                <li><a href="#" class="hover:underline hover:text-[#FF9900]">Home</a></li>
+                <li><a href="#" class="hover:underline hover:text-[#FF9900]">About</a></li>
+                <li><a href="#" class="hover:underline hover:text-[#FF9900]">Catogeries</a></li>
+                <li><a href="#" class="hover:underline hover:text-[#FF9900]">Shop</a></li>
+                <li><a href="#" class="hover:underline hover:text-[#FF9900]">About Us</a></li>
+            </ul>
+            <div class="md:hidden flex items-center text-[2rem]">
+                <i class="bi bi-list" id="nav-toggle"></i>
+            </div>
+            <button
+                class="bg-[#FF9900] text-white text-[1.3rem] font-semibold py-3 px-9 rounded-xl sm:hidden lg:block mmb:hidden">Shop
+                Now</button>
+        </nav>
+        <!-- toggle Navbar -->
+        <ul id="nav-content"
+            class="hidden md:hidden text-center space-y-3 text-[1.3rem] text-[#715C54] bg-white shadow-custom-inner fixed top-[6rem] w-full z-50">
+            <li><a href="#" class="hover:underline hover:text-[#FF9900]">Home</a></li>
+            <li><a href="#" class="hover:underline hover:text-[#FF9900]">About</a></li>
+            <li><a href="#" class="hover:underline hover:text-[#FF9900]">Catogeries</a></li>
+            <li><a href="#" class="hover:underline hover:text-[#FF9900]">Shop</a></li>
+            <li><a href="#" class="hover:underline hover:text-[#FF9900]">About Us</a></li>
+        </ul>
+
+        <!-- Hero Section -->
+        <section class="w-full h-[90vh] flex justify-center items-center relative mt-24">
+            <img src="img/hero-bg.png" alt="" class="w-full h-full object-cover">
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white w-full">
+                <h3 class="text-[#DCD0CB] xl:text-[7rem] font-bold mmb:text-[4rem]">Get a new friend</h3>
+                <button class="bg-[#FF9900] text-white text-[1.3rem] font-semibold py-3 px-9 rounded-xl">Shop
+                    Now</button>
+            </div>
+        </section>
+
+    </header>
+
+    <!-- Our Special section -->
+    <section class="w-full h-auto flex flex-col justify-center items-center py-20">
+        <h2 class="text-[#FF9900] text-[3rem]">Our Special’s</h2>
+        <p class="text-[#715C54] text-[1.6rem]">Get our top selling products</p>
+        <div class="w-full h-auto flex justify-center items-center md:space-x-10 mt-10 flex-wrap">
+            <div>
+                <img src="img/special1.png" alt="">
+                <p class="text-[#A7A6A6] text-[1.4rem]">Soft Goat Toy</p>
+            </div>
+            <div>
+                <img src="img/special2.png" alt="">
+                <p class="text-[#A7A6A6] text-[1.4rem]">Soft Dog</p>
+            </div>
+            <div>
+                <img src="img/special3.png" alt="">
+                <p class="text-[#A7A6A6] text-[1.4rem]">Coloured Dogs</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
