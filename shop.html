@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="CSS/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    </style>
+</head>
+
+<body class="w-full h-full font-QuickSand">
+
+    <!-- header -->
+    <header class="w-full" id="home">
+        <!-- navbar -->
+        <nav
+            class="w-full h-24 bg-white text-[#715C54] flex justify-between items-center px-10 shadow-custom-inner fixed top-0 z-50">
+            <h1 class="text-[#000] text-[2.5rem] font-bold ">Revel<span class="text-[#FF9900]">ation.</span></h1>
+            <ul class="justify-between items-center space-x-10 text-[1.3rem] hidden md:flex">
+                <li><a href="index.html" class="hover:underline hover:text-[#FF9900] active:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline hover:text-[#FF9900] active:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline hover:text-[#FF9900] active:underline">Catogeries</a></li>
+                <li><a href="shop.html" class="hover:underline hover:text-[#FF9900] active:underline">Shop</a></li>
+                <li><a href="#" class="hover:underline hover:text-[#FF9900] active:underline">Contact Us</a></li>
+            </ul>
+            <div class="md:hidden flex items-center text-[2rem]">
+                <i class="bi bi-list" id="nav-toggle"></i>
+            </div>
+            <button
+                class="bg-[#FF9900] text-white text-[1.3rem] font-semibold py-3 px-9 rounded-xl sm:hidden lg:block mmb:hidden">Shop
+                Now</button>
+        </nav>
+        <!-- toggle Navbar -->
+        <ul id="nav-content"
+            class="hidden md:hidden text-center space-y-3 text-[1.3rem] text-[#715C54] bg-white shadow-custom-inner fixed top-[6rem] w-full z-50">
+            <li><a href="index.html" class="hover:underline hover:text-[#FF9900]">Home</a></li>
+            <li><a href="about.html" class="hover:underline hover:text-[#FF9900]">About Us</a></li>
+            <li><a href="#" class="hover:underline hover:text-[#FF9900]">Catogeries</a></li>
+            <li><a href="shop.html" class="hover:underline hover:text-[#FF9900]">Shop</a></li>
+            <li><a href="#" class="hover:underline hover:text-[#FF9900]">Contact Us</a></li>
+        </ul>
+
+        <!-- Hero Section -->
+        <section class="w-full h-[90vh] flex justify-center items-center relative mt-24">
+            <img src="img/hero-bg.png" alt="" class="w-full h-full object-cover">
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center flex-col text-white w-full">
+                <h3 class="text-[#FF9900] xl:text-[7rem] font-bold mmb:text-[4rem] text-center">32% Off <span
+                        class="text-[#dcd0cb] xl:text-[5rem] mmb:text[3rem]">on new products</span></h3>
+                <hr class="w-[25%] border-[3px] rounded-md border-[#FF9900]">
+            </div>
+        </section>
+    </header>
+
+    <!-- Search items -->
+    <div
+        class="w-full h-auto flex justify-center items-center lg:flex-row flex-col space-y-5 lg:space-x-4 lg:space-y-0 mt-10">
+        <input type="text" placeholder="Search something..."
+            class="lg:w-[40%] h-[50px] border-[1px] border-[#000] rounded-md px-5 w-[70%]">
+        <button class="bg-[#FF9900] text-white text-[1.3rem] font-semibold py-3 px-9 rounded-xl">Search</button>
+    </div>
+
+    <!-- items -->
+    <section class="w-full h-auto flex justify-center items-center py-20 flex-wrap">
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+            <img src="img/special3.png" alt="">
+            <div class="flex justify-between items-center">
+                <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
+                <span class="text-[#FF9900] text-[2rem]">$10</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative w-full h-auto text-white flex flex-col justify-center items-center">
+        <img src="img/footerImg.png" alt="" class="w-full lg:h-auto sm:h-[45vh] h-[55vh] object-cover">
+        <div
+            class="absolute text-[#ffffff] lg:top-36 sm:top-16 top-24 w-full flex flex-row justify-around items-center flex-wrap">
+            <div class="lg:w-[25%] md:w-[40%] w-[100%] lg:text-start text-center">
+                <h1 class="text-[#D6BDB3] lg:text-[3rem] text-[1.8rem] font-bold">Revel<span
+                        class="text-[#000]">ation</span></h1>
+                <p class="text-[#715C54] lg:text-[1.8rem] text-[1.3rem]">Revelation is working since 1990. and make high
+                    quality soft animals. for all age groups</p>
+            </div>
+            <ul>
+                <li class="text-[#383126] font-bold text-[2rem]">About</li>
+                <li class="text-[#715C54] text-[1.2rem]">Company</li>
+                <li class="text-[#715C54] text-[1.2rem]">Management</li>
+                <li class="text-[#715C54] text-[1.2rem]">Goal</li>
+                <li class="text-[#715C54] text-[1.2rem]">Locations</li>
+            </ul>
+            <ul>
+                <li class="text-[#383126] font-bold text-[2rem]">Support</li>
+                <li class="text-[#715C54] text-[1.2rem]">Company</li>
+                <li class="text-[#715C54] text-[1.2rem]">Our policy</li>
+                <li class="text-[#715C54] text-[1.2rem]">Contact</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

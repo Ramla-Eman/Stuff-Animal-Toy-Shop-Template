@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template1</title>
+    <title>Revelation</title>
     <link rel="stylesheet" href="CSS/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
@@ -20,11 +20,11 @@
             class="w-full h-24 bg-white text-[#715C54] flex justify-between items-center px-10 shadow-custom-inner fixed top-0 z-50">
             <h1 class="text-[#000] text-[2.5rem] font-bold ">Revel<span class="text-[#FF9900]">ation.</span></h1>
             <ul class="justify-between items-center space-x-10 text-[1.3rem] hidden md:flex">
-                <li><a href="#" class="hover:underline hover:text-[#FF9900]">Home</a></li>
-                <li><a href="#" class="hover:underline hover:text-[#FF9900]">About</a></li>
-                <li><a href="#" class="hover:underline hover:text-[#FF9900]">Catogeries</a></li>
-                <li><a href="#" class="hover:underline hover:text-[#FF9900]">Shop</a></li>
-                <li><a href="#" class="hover:underline hover:text-[#FF9900]">About Us</a></li>
+                <li><a href="#home" class="hover:underline hover:text-[#FF9900] active:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline hover:text-[#FF9900] active:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline hover:text-[#FF9900] active:underline">Catogeries</a></li>
+                <li><a href="shop.html" class="hover:underline hover:text-[#FF9900] active:underline">Shop</a></li>
+                <li><a href="#contact" class="hover:underline hover:text-[#FF9900] active:underline">Contact Us</a></li>
             </ul>
             <div class="md:hidden flex items-center text-[2rem]">
                 <i class="bi bi-list" id="nav-toggle"></i>
@@ -36,11 +36,11 @@
         <!-- toggle Navbar -->
         <ul id="nav-content"
             class="hidden md:hidden text-center space-y-3 text-[1.3rem] text-[#715C54] bg-white shadow-custom-inner fixed top-[6rem] w-full z-50">
-            <li><a href="#" class="hover:underline hover:text-[#FF9900]">Home</a></li>
-            <li><a href="#" class="hover:underline hover:text-[#FF9900]">About</a></li>
+            <li><a href="#home" class="hover:underline hover:text-[#FF9900]">Home</a></li>
+            <li><a href="about.html" class="hover:underline hover:text-[#FF9900]">About Us</a></li>
             <li><a href="#" class="hover:underline hover:text-[#FF9900]">Catogeries</a></li>
-            <li><a href="#" class="hover:underline hover:text-[#FF9900]">Shop</a></li>
-            <li><a href="#" class="hover:underline hover:text-[#FF9900]">About Us</a></li>
+            <li><a href="shop.html" class="hover:underline hover:text-[#FF9900]">Shop</a></li>
+            <li><a href="#contact" class="hover:underline hover:text-[#FF9900]">About Us</a></li>
         </ul>
 
         <!-- Hero Section -->
@@ -128,7 +128,7 @@
         </div>
     </section>
 
-    <section class="w-full h-auto flex flex-col justify-center items-center py-20">
+    <section class="w-full h-auto flex flex-col justify-center items-center py-20" id="contact">
         <h2 class="text-[#FF9900] text-[3rem]">Get In Touch</h2>
         <p class="text-[#715C54] text-[1.6rem] text-center">Sign to get new items and latest deals</p>
         <div
