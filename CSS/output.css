@@ -665,12 +665,20 @@ video {
   inset: -0.25rem;
 }
 
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
 
 .left-1\/2 {
   left: 50%;
+}
+
+.left-4 {
+  left: 1rem;
 }
 
 .left-\[13\%\] {
@@ -695,30 +703,6 @@ video {
 
 .top-\[6rem\] {
   top: 6rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.bottom-6 {
-  bottom: 1.5rem;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
 }
 
 .isolate {
@@ -917,16 +901,16 @@ video {
   height: 380px;
 }
 
-.h-\[40vh\] {
-  height: 40vh;
-}
-
 .h-\[50px\] {
   height: 50px;
 }
 
 .h-\[55vh\] {
   height: 55vh;
+}
+
+.h-\[65vh\] {
+  height: 65vh;
 }
 
 .h-\[8rem\] {
@@ -943,6 +927,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[75vh\] {
+  height: 75vh;
 }
 
 .w-1\/2 {
@@ -2178,6 +2166,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -2188,10 +2180,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-1 {
@@ -2207,6 +2195,11 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -2247,16 +2240,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .text-left {
@@ -2993,12 +2976,12 @@ video {
     top: 4rem;
   }
 
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:h-\[45vh\] {
     height: 45vh;
+  }
+
+  .sm\:h-\[65vh\] {
+    height: 65vh;
   }
 
   .sm\:underline {
@@ -3043,10 +3026,6 @@ video {
 
   .lg\:top-\[35\%\] {
     top: 35%;
-  }
-
-  .lg\:block {
-    display: block;
   }
 
   .lg\:flex {
