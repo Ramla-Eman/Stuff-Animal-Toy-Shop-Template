@@ -30,7 +30,7 @@ searchButton.addEventListener('click', function() {
     if (!foundMatch) {
         // SweetAlert for product not found
         Swal.fire({
-            iconHtml: '😞',
+            iconHtml: '<img src="img/lost.gif" alt="">',
             title: 'Product not found',
             text: 'Try a different search term.',
             confirmButtonText: 'OK',
