@@ -72,3 +72,40 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
+// heart functionality on card using local storage
+// Get all heart icons
+const hearts = document.querySelectorAll('.bi-heart');
+
+// Iterate over each heart and set the state based on its ID stored in localStorage
+hearts.forEach(heart => {
+    // Retrieve the saved state for the current heart using its unique ID
+    const isHeartFilled = localStorage.getItem(heart.id);
+
+    // Apply the stored state if available
+    if (isHeartFilled === 'true') {
+        heart.classList.remove('bi-heart');
+        heart.classList.add('bi-heart-fill');
+        heart.style.color = 'red'; // Set red color
+    }
+
+    // Add click event listener to each heart icon
+    heart.addEventListener('click', function() {
+        // Toggle heart state on click
+        if (this.classList.contains('bi-heart')) {
+            this.classList.remove('bi-heart');  // Remove outlined heart
+            this.classList.add('bi-heart-fill'); // Add filled heart
+            this.style.color = 'red'; // Fill with red color
+
+            // Save the state in localStorage
+            localStorage.setItem(this.id, 'true');
+        } else {
+            this.classList.remove('bi-heart-fill');  // Remove filled heart
+            this.classList.add('bi-heart'); // Add outlined heart
+            this.style.color = ''; // Remove red color
+
+            // Save the state in localStorage
+            localStorage.setItem(this.id, 'false');
+        }
+    });
+});

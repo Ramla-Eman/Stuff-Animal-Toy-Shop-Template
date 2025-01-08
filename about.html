@@ -18,7 +18,7 @@
     <header class="w-full" id="home">
         <!-- navbar -->
         <nav
-            class="w-full h-24 bg-white text-[#715C54] flex justify-between items-center px-10 shadow-custom-inner fixed top-0 z-50">
+            class="w-full h-24 bg-white text-[#715C54] flex justify-between items-center sm:px-10 shadow-custom-inner fixed top-0 z-50">
             <h1 class="text-[#000] text-[2.5rem] font-bold ">Revel<span class="text-[#FF9900]">ation.</span></h1>
             <ul class="justify-between items-center space-x-10 text-[1.3rem] hidden md:flex">
                 <li><a href="index.html" class="hover:underline hover:text-[#FF9900] active:underline">Home</a></li>
@@ -28,7 +28,7 @@
                 </li>
             </ul>
             <!-- Cart -->
-            <div class="cart-icon relative">
+            <div class="cart-icon relative hidden md:flex">
                 <a href="cartPage.html">
                     <i class="bi bi-cart text-[1.8rem]"></i>
                     <span id="cart-count" class="absolute left-4 bottom-5 bg-red-600 rounded-full p-1 px-3 text-white">0</span>
@@ -45,6 +45,12 @@
             <li><a href="about.html" class="hover:underline hover:text-[#FF9900]">About Us</a></li>
             <li><a href="shop.html" class="hover:underline hover:text-[#FF9900]">Shop</a></li>
             <li><a href="contact.html" class="hover:underline hover:text-[#FF9900]">Contact Us</a></li>
+            <div class="cart-icon relative flex md:hidden">
+                <a href="cartPage.html">
+                    <i class="bi bi-cart text-[1.8rem]"></i>
+                    <span id="cart-count" class="absolute left-4 bottom-5 bg-red-600 rounded-full p-1 px-3 text-white">0</span>
+                </a>
+            </div>
         </ul>
 
         <!-- Hero Section -->

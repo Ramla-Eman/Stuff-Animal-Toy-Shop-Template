@@ -18,19 +18,21 @@
     <header class="w-full" id="home">
         <!-- navbar -->
         <nav
-            class="w-full h-24 bg-white text-[#715C54] flex justify-between items-center px-10 shadow-custom-inner fixed top-0 z-50">
+            class="w-full h-24 bg-white text-[#715C54] flex justify-between items-center sm:px-10 shadow-custom-inner fixed top-0 z-50">
             <h1 class="text-[#000] text-[2.5rem] font-bold ">Revel<span class="text-[#FF9900]">ation.</span></h1>
             <ul class="justify-between items-center space-x-10 text-[1.3rem] hidden md:flex">
                 <li><a href="index.html" class="hover:underline hover:text-[#FF9900] active:underline">Home</a></li>
                 <li><a href="about.html" class="hover:underline hover:text-[#FF9900] active:underline">About Us</a></li>
                 <li><a href="shop.html" class="hover:underline hover:text-[#FF9900] active:underline">Shop</a></li>
-                <li><a href="contact.html" class="hover:underline hover:text-[#FF9900] active:underline">Contact Us</a></li>
+                <li><a href="contact.html" class="hover:underline hover:text-[#FF9900] active:underline">Contact Us</a>
+                </li>
             </ul>
             <!-- Cart -->
-            <div class="cart-icon relative">
+            <div class="cart-icon relative hidden md:flex">
                 <a href="cartPage.html">
                     <i class="bi bi-cart text-[1.8rem]"></i>
-                    <span id="cart-count" class="absolute left-4 bottom-5 bg-red-600 rounded-full p-1 px-3 text-white">0</span>
+                    <span id="cart-count"
+                        class="absolute left-4 bottom-5 bg-red-600 rounded-full p-1 px-3 text-white">0</span>
                 </a>
             </div>
             <div class="md:hidden flex items-center text-[2rem]">
@@ -44,6 +46,13 @@
             <li><a href="about.html" class="hover:underline hover:text-[#FF9900]">About Us</a></li>
             <li><a href="shop.html" class="hover:underline hover:text-[#FF9900]">Shop</a></li>
             <li><a href="contact.html" class="hover:underline hover:text-[#FF9900]">Contact Us</a></li>
+            <div class="cart-icon relative flex md:hidden">
+                <a href="cartPage.html">
+                    <i class="bi bi-cart text-[1.8rem]"></i>
+                    <span id="cart-count"
+                        class="absolute left-4 bottom-5 bg-red-600 rounded-full p-1 px-3 text-white">0</span>
+                </a>
+            </div>
         </ul>
 
         <!-- Hero Section -->
@@ -63,7 +72,8 @@
         class="w-full h-auto flex justify-center items-center lg:flex-row flex-col space-y-5 lg:space-x-4 lg:space-y-0 mt-10">
         <input type="text" id="search-bar" placeholder="Search something..."
             class="lg:w-[40%] h-[50px] border-[1px] border-[#000] rounded-md px-5 w-[70%]">
-        <button class="bg-[#FF9900] text-white text-[1.3rem] font-semibold py-3 px-9 rounded-xl" id="search">Search</button>
+        <button class="bg-[#FF9900] text-white text-[1.3rem] font-semibold py-3 px-9 rounded-xl"
+            id="search">Search</button>
     </div>
 
     <!-- items -->
@@ -75,139 +85,151 @@
                 <span class="text-[#FF9900] text-[2rem]">$10</span>
             </div>
             <div class="flex justify-between items-center">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart1"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new7.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap">
                 <h4 class="text-[#000] text-[1.5rem]">Cozy Kitty Cuddles Plush Cat</h4>
                 <span class="text-[#FF9900] text-[2rem]">$15.50</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart2"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new8.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Reversible Octopus</h4>
                 <span class="text-[#FF9900] text-[2rem]">$18.20</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart3"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new9.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap">
                 <h4 class="text-[#000] text-[1.5rem]">Soft Stuffed Teddy Bear with Cap</h4>
                 <span class="text-[#FF9900] text-[2rem]">$21.50</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart4"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new10.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Cozy Sponge Bob</h4>
                 <span class="text-[#FF9900] text-[2rem]">$13.99</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart5"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new11.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Catto</h4>
                 <span class="text-[#FF9900] text-[2rem]">$15.50</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart6"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new12.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem] ">Catto White</h4>
                 <span class="text-[#FF9900] text-[2rem]">$16.99</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart7"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new13.jpg" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">White Floppy Plush Hat</h4>
                 <span class="text-[#FF9900] text-[2rem]">$23</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart8"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new14.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Strawberry Bunny</h4>
                 <span class="text-[#FF9900] text-[2rem]">$16.10</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart9"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new15.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Pikachu</h4>
                 <span class="text-[#FF9900] text-[2rem]">$15.50</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart10"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new16.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Doremon</h4>
                 <span class="text-[#FF9900] text-[2rem]">$15.50</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart11"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new3.jpg" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Snuggle Buddies</h4>
                 <span class="text-[#FF9900] text-[2rem]">$15.50</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart12"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new17.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Pink Panther</h4>
                 <span class="text-[#FF9900] text-[2rem]">$15.50</span>
             </div>
             <div class="flex justify-between items-center w-full">
-                <i class="bi bi-heart text-[#FF9900] text-[2rem]"></i>
+                <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart13"></i>
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
