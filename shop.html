@@ -26,6 +26,13 @@
                 <li><a href="shop.html" class="hover:underline hover:text-[#FF9900] active:underline">Shop</a></li>
                 <li><a href="contact.html" class="hover:underline hover:text-[#FF9900] active:underline">Contact Us</a></li>
             </ul>
+            <!-- Cart -->
+            <div class="cart-icon relative">
+                <a href="cartPage.html">
+                    <i class="bi bi-cart text-[1.8rem]"></i>
+                    <span id="cart-count" class="absolute left-4 bottom-5 bg-red-600 rounded-full p-1 px-3 text-white">0</span>
+                </a>
+            </div>
             <div class="md:hidden flex items-center text-[2rem]">
                 <i class="bi bi-list" id="nav-toggle"></i>
             </div>
@@ -54,14 +61,14 @@
     <!-- Search items -->
     <div
         class="w-full h-auto flex justify-center items-center lg:flex-row flex-col space-y-5 lg:space-x-4 lg:space-y-0 mt-10">
-        <input type="text" placeholder="Search something..."
+        <input type="text" id="search-bar" placeholder="Search something..."
             class="lg:w-[40%] h-[50px] border-[1px] border-[#000] rounded-md px-5 w-[70%]">
-        <button class="bg-[#FF9900] text-white text-[1.3rem] font-semibold py-3 px-9 rounded-xl">Search</button>
+        <button class="bg-[#FF9900] text-white text-[1.3rem] font-semibold py-3 px-9 rounded-xl" id="search">Search</button>
     </div>
 
     <!-- items -->
-    <section class="w-full h-auto flex justify-center items-center py-20 flex-wrap">
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
+    <section class="w-full h-auto flex justify-center items-center py-20 flex-wrap" id="items">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2">
             <img src="img/special3.png" alt="">
             <div class="flex justify-between items-center">
                 <h4 class="text-[#000] text-[1.5rem]">Coloured Dogs</h4>
@@ -72,7 +79,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new7.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap">
                 <h4 class="text-[#000] text-[1.5rem]">Cozy Kitty Cuddles Plush Cat</h4>
@@ -83,7 +90,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new8.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Reversible Octopus</h4>
@@ -94,7 +101,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new9.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap">
                 <h4 class="text-[#000] text-[1.5rem]">Soft Stuffed Teddy Bear with Cap</h4>
@@ -105,7 +112,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new10.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Cozy Sponge Bob</h4>
@@ -116,7 +123,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new11.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Catto</h4>
@@ -127,7 +134,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new12.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem] ">Catto White</h4>
@@ -138,7 +145,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new13.jpg" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">White Floppy Plush Hat</h4>
@@ -149,7 +156,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new14.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Strawberry Bunny</h4>
@@ -160,7 +167,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new15.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Pikachu</h4>
@@ -171,7 +178,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new16.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Doremon</h4>
@@ -182,7 +189,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new3.jpg" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Snuggle Buddies</h4>
@@ -193,7 +200,7 @@
                 <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
             </div>
         </div>
-        <div class="bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+        <div class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new17.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Pink Panther</h4>
@@ -234,6 +241,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
