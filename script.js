@@ -1,18 +1,16 @@
-// Tooggle Navbar
+//----------------- Tooggle Navbar
 const navToggle = document.getElementById('nav-toggle');
 const navContent = document.getElementById('nav-content');
-
 navToggle.addEventListener('click', () => {
     navContent.classList.toggle('hidden');
 });
 
-// Search for products
+//---------------- Search for products
 const searchButton = document.getElementById('search');
 const searchBar = document.getElementById('search-bar');
 const items = document.querySelectorAll('#items .card');
 const itemsContainer = document.getElementById('items');
-
-searchButton.addEventListener('click', function() {
+searchButton.addEventListener('click', function () {
     const searchTerm = searchBar.value.toLowerCase();
     let foundMatch = false;
 
@@ -40,7 +38,6 @@ searchButton.addEventListener('click', function() {
         });
     }
 });
-
 const resetButton = document.createElement('button');
 resetButton.textContent = 'X';
 resetButton.id = 'reset-button';
@@ -51,16 +48,13 @@ resetButton.style.fontSize = '1.3rem';
 resetButton.style.padding = '10px';
 resetButton.style.borderRadius = '10px';
 resetButton.style.background = '#FF9900';
-
 searchBar.parentNode.appendChild(resetButton);
-
-resetButton.addEventListener('click', function() {
+resetButton.addEventListener('click', function () {
     searchBar.value = '';
     items.forEach(item => {
         item.classList.remove('highlight');
     });
 });
-
 const style = document.createElement('style');
 style.innerHTML = `
     .highlight {
@@ -73,39 +67,38 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
-// heart functionality on card using local storage
-// Get all heart icons
+//----------------- heart functionality on card using local storage
 const hearts = document.querySelectorAll('.bi-heart');
-
-// Iterate over each heart and set the state based on its ID stored in localStorage
 hearts.forEach(heart => {
-    // Retrieve the saved state for the current heart using its unique ID
     const isHeartFilled = localStorage.getItem(heart.id);
 
-    // Apply the stored state if available
     if (isHeartFilled === 'true') {
         heart.classList.remove('bi-heart');
         heart.classList.add('bi-heart-fill');
-        heart.style.color = 'red'; // Set red color
+        heart.style.color = 'red';
     }
 
-    // Add click event listener to each heart icon
-    heart.addEventListener('click', function() {
-        // Toggle heart state on click
+    heart.addEventListener('click', function () {
         if (this.classList.contains('bi-heart')) {
-            this.classList.remove('bi-heart');  // Remove outlined heart
-            this.classList.add('bi-heart-fill'); // Add filled heart
-            this.style.color = 'red'; // Fill with red color
+            this.classList.remove('bi-heart');
+            this.classList.add('bi-heart-fill');
+            this.style.color = 'red';
 
-            // Save the state in localStorage
             localStorage.setItem(this.id, 'true');
         } else {
-            this.classList.remove('bi-heart-fill');  // Remove filled heart
-            this.classList.add('bi-heart'); // Add outlined heart
-            this.style.color = ''; // Remove red color
+            this.classList.remove('bi-heart-fill');
+            this.classList.add('bi-heart');
+            this.style.color = '';
 
-            // Save the state in localStorage
             localStorage.setItem(this.id, 'false');
         }
     });
 });
+
+document.querySelectorAll('.cardbutton').forEach(card => {
+    card.addEventListener('click', function () {
+        const productId = this.getAttribute('data-id');
+        window.location.href = `productPage.html?id=${productId}`;
+    });
+});
+

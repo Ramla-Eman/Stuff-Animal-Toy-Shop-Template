@@ -29,9 +29,9 @@
             </ul>
             <!-- Cart -->
             <div class="cart-icon relative hidden md:flex">
-                <a href="cartPage.html">
+                <a href="cart.html">
                     <i class="bi bi-cart text-[1.8rem]"></i>
-                    <span id="cart-count"
+                    <span id="cart-counter"
                         class="absolute left-4 bottom-5 bg-red-600 rounded-full p-1 px-3 text-white">0</span>
                 </a>
             </div>
@@ -47,7 +47,7 @@
             <li><a href="shop.html" class="hover:underline hover:text-[#FF9900]">Shop</a></li>
             <li><a href="contact.html" class="hover:underline hover:text-[#FF9900]">Contact Us</a></li>
             <div class="cart-icon relative flex md:hidden">
-                <a href="cartPage.html">
+                <a href="cart.html">
                     <i class="bi bi-cart text-[1.8rem]"></i>
                     <span id="cart-count"
                         class="absolute left-4 bottom-5 bg-red-600 rounded-full p-1 px-3 text-white">0</span>
@@ -86,7 +86,7 @@
             </div>
             <div class="flex justify-between items-center">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart1"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="1">Add To Cart</button>
             </div>
         </div>
         <div
@@ -98,7 +98,7 @@
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart2"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="2">Add To Cart</button>
             </div>
         </div>
         <div
@@ -110,19 +110,19 @@
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart3"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="3">Add To Cart</button>
             </div>
         </div>
         <div
             class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
             <img src="img/new9.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
-            <div class="flex justify-between items-center flex-wrap">
-                <h4 class="text-[#000] text-[1.5rem]">Soft Stuffed Teddy Bear with Cap</h4>
+            <div class="flex justify-between items-center flex-wrap w-full">
+                <h4 class="text-[#000] text-[1.5rem]">Teddy Bear with Cap</h4>
                 <span class="text-[#FF9900] text-[2rem]">$21.50</span>
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart4"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="4">Add To Cart</button>
             </div>
         </div>
         <div
@@ -134,7 +134,7 @@
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart5"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="5">Add To Cart</button>
             </div>
         </div>
         <div
@@ -146,7 +146,7 @@
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart6"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="6">Add To Cart</button>
             </div>
         </div>
         <div
@@ -158,7 +158,7 @@
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart7"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="7">Add To Cart</button>
             </div>
         </div>
         <div
@@ -170,7 +170,7 @@
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart8"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="8">Add To Cart</button>
             </div>
         </div>
         <div
@@ -182,7 +182,7 @@
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart9"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="9">Add To Cart</button>
             </div>
         </div>
         <div
@@ -190,11 +190,11 @@
             <img src="img/new15.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Pikachu</h4>
-                <span class="text-[#FF9900] text-[2rem]">$15.50</span>
+                <span class="text-[#FF9900] text-[2rem]">$12.10</span>
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart10"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="10">Add To Cart</button>
             </div>
         </div>
         <div
@@ -202,23 +202,23 @@
             <img src="img/new16.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Doremon</h4>
-                <span class="text-[#FF9900] text-[2rem]">$15.50</span>
+                <span class="text-[#FF9900] text-[2rem]">$12.10</span>
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart11"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="11">Add To Cart</button>
             </div>
         </div>
         <div
-            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center">
+            class="card bg-[#FFF6F2] border-[#FF9900] border-[2px] rounded-md p-3 m-5 space-y-2 flex flex-col items-center" data-id="12">
             <img src="img/new3.jpg" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Snuggle Buddies</h4>
-                <span class="text-[#FF9900] text-[2rem]">$15.50</span>
+                <span class="text-[#FF9900] text-[2rem]">$30.99</span>
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart12"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="12">Add To Cart</button>
             </div>
         </div>
         <div
@@ -226,11 +226,11 @@
             <img src="img/new17.webp" alt="" class="w-[380px] h-[100%] object-fill rounded-xl">
             <div class="flex justify-between items-center flex-wrap w-full">
                 <h4 class="text-[#000] text-[1.5rem]">Pink Panther</h4>
-                <span class="text-[#FF9900] text-[2rem]">$15.50</span>
+                <span class="text-[#FF9900] text-[2rem]">$12.10</span>
             </div>
             <div class="flex justify-between items-center w-full">
                 <i class="bi bi-heart text-[#FF9900] text-[2rem]" id="heart13"></i>
-                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem]">Add To Cart</button>
+                <button class="border-[#FF9900] border-[2px] rounded-md py-2 px-4 text-[1.4rem] cardbutton" data-id="13">Add To Cart</button>
             </div>
         </div>
     </section>
@@ -262,6 +262,7 @@
         </div>
     </footer>
 
+    <script src="productPage.js" defer></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
